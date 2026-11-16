@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Novelty Ola</title>
+<meta name="description" content="Novelty Ola — authorised Ola Electric dealer in Punjab. Ola S1 scooters and Roadster motorcycles, test rides, finance and service across 17 outlets in 11 cities.">
+<meta name="theme-color" content="#F66A1F">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Manrope:wght@400;500;600;700;800&family=Bodoni+Moda:ital,opsz,wght@1,6..96,600&display=swap">
+<link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="Novelty Ola home"><span class="n">NOVELTY</span><span class="o">OLA</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="#models">Models</a><a href="#services">Services</a><a href="#savings">Savings</a><a href="#outlets">Outlets</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="btn btn-ola" href="#contact" data-interest="Book a test ride">Book a Test Ride</a>
+      <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mnav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+  <div class="wrap mnav" id="mnav" hidden>
+    <a href="#models">Models</a><a href="#services">Services</a><a href="#savings">Savings</a><a href="#outlets">Outlets</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+  </div>
+</header>
+
+<main>
+<section class="hero ny" id="top">
+  <canvas id="fw" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow" data-t="hero.badge">New Year 2027 Celebrations</p>
+        <h1 class="nyh">
+          <span class="h-pre" data-t="hero.pre_title">Ride into 2027 with</span>
+          <span class="wm" aria-label="Novelty Ola"><span class="w1" data-t="hero.brand_1">NOVELTY</span> <span class="w2" data-t="hero.brand_2">OLA</span></span>
+        </h1>
+        <p class="bsub" data-t="hero.sub_line">Punjab's Ola Electric dealer · 17 outlets · 11 cities</p>
+        <p class="lead" data-t="hero.lead">Your new Ola is waiting at Novelty Ola. Walk into your nearest outlet for New Year offers, easy EMI, a fair exchange on your old two-wheeler and a free test ride, with service handled by our own team after you ride home.</p>
+        <ul class="trust" id="trust"></ul>
+        <div class="ctas">
+          <button class="btn btn-gold" type="button" id="nyOffer" data-t="hero.cta_primary">Get New Year Offer →</button>
+          <a class="btn btn-ghost" href="#outlets" data-t="hero.cta_secondary">Find your Novelty Ola outlet</a>
+        </div>
+        <div class="cd" id="cd" aria-live="off">
+          <span class="cl" id="cdLabel" data-t="hero.countdown_label">Countdown to 2027</span>
+          <div><b id="cdD">00</b><small>Days</small></div>
+          <div><b id="cdH">00</b><small>Hours</small></div>
+          <div><b id="cdM">00</b><small>Min</small></div>
+          <div><b id="cdS">00</b><small>Sec</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <span class="year" aria-hidden="true" data-t="hero.big_text">2027</span>
+        <div class="stage" id="heroArt"></div>
+        <div class="tagcard"><b data-t="hero.tag_title">New Year deliveries</b><span data-t="hero.tag_sub">Book now at Novelty Ola</span></div>
+        <div class="thumbs" id="thumbs" role="group" aria-label="Choose a model"></div>
+        <p class="nowshow" id="nowshow"></p>
+      </div>
+    </div>
+    <dl class="stats">
+      <div><dt hidden>Outlets</dt><dd class="v" data-t="business.outlets_count">17</dd><dd class="l">Outlets in <span data-t="business.cities_count">11</span> cities</dd></div>
+      <div><dt hidden>Models</dt><dd class="v" id="statModels">7</dd><dd class="l">Scooters &amp; motorcycles</dd></div>
+      <div><dt hidden>Service</dt><dd class="v">Sales</dd><dd class="l">&amp; after-sales service</dd></div>
+    </dl>
+  </div>
+</section>
+
+<div class="ribbon" aria-label="Novelty Ola outlet cities">
+  <div class="ribbon-track" id="ribbon"></div>
+</div>
+
+<section id="about">
+  <div class="wrap about">
+    <div class="panel">
+      <span class="brands">A Novelty Group dealership</span>
+      <div>
+        <div class="big" data-t="business.outlets_count">17</div>
+        <p>outlets in <span data-t="business.cities_count">11</span> cities across Punjab</p>
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">About Novelty Ola</p>
+      <h2 class="display-l" data-t="business.about_title">A name Punjab already trusts, now electric.</h2>
+      <p class="lead" data-t="business.about_p1">Novelty Group has sold and serviced vehicles across Punjab for years through Novelty Tata, Novelty Hyundai, Novelty Mahindra and our TVS and Ather two-wheeler outlets.</p>
+      <p class="lead" data-t="business.about_p2">Novelty Ola brings that same team and that same after-sales care to Ola Electric. Walk in for a test ride, get finance and insurance done at the counter, and ride home the same week.</p>
+    </div>
+  </div>
+</section>
+
+<section id="models" class="mist">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">The Ola lineup</p>
+        <h2 class="display-l">Find the Ola that fits your ride.</h2>
+      </div>
+      <p class="lead" style="max-width:40ch">The full Ola S1 scooter range and Roadster motorcycles, ready to book and test ride at Novelty Ola.</p>
+    </div>
+    <div class="mtabs" role="group" aria-label="Filter models" id="mtabs">
+      <button type="button" data-f="all" aria-selected="true">All models</button>
+      <button type="button" data-f="scooter" aria-selected="false">Scooters</button>
+      <button type="button" data-f="bike" aria-selected="false">Motorcycles</button>
+    </div>
+    <div class="mgrid" id="mgrid"></div>
+    <p class="fine" data-t="business.models_note">Starting prices are ex-showroom. Monthly EMI amounts are indicative and depend on the finance scheme, down payment and tenure. Prices, offers and EMI are subject to change, so ask us for today's on-road price.</p>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Services</p>
+        <h2 class="display-l">Everything under one roof.</h2>
+      </div>
+      <a class="btn btn-ola" href="#contact" data-interest="Book a service">Book a Service</a>
+    </div>
+    <div class="svc" id="svc"></div>
+  </div>
+</section>
+
+<section id="savings" class="mist">
+  <div class="wrap sv">
+    <div>
+      <p class="eyebrow">Savings calculator</p>
+      <h2 class="display-l">See what you save by switching.</h2>
+      <p class="lead">Compare an average petrol scooter with an Ola electric scooter based on your daily ride.</p>
+      <div class="sliders">
+        <label for="km"><span class="row"><span>Daily riding</span><output id="kmOut">40 km</output></span><input id="km" type="range" min="10" max="150" step="5" value="40"></label>
+        <label for="petrol"><span class="row"><span>Petrol price</span><output id="petrolOut">₹97 / litre</output></span><input id="petrol" type="range" min="85" max="115" step="1" value="97"></label>
+        <label for="mileage"><span class="row"><span>Petrol scooter mileage</span><output id="mileageOut">45 km/l</output></span><input id="mileage" type="range" min="25" max="70" step="1" value="45"></label>
+        <label for="unit"><span class="row"><span>Electricity rate</span><output id="unitOut">₹7 / unit</output></span><input id="unit" type="range" min="3" max="12" step="0.5" value="7"></label>
+      </div>
+    </div>
+    <div class="sv-card" aria-live="polite">
+      <p class="k">Estimated monthly saving</p>
+      <p class="big" id="save">₹0</p>
+      <p class="yr">That's about <strong id="year">₹0</strong> a year, and <strong id="five">₹0</strong> over five years.</p>
+      <div class="split">
+        <div><p class="k">Petrol / month</p><p class="n" id="petAmt">₹0</p></div>
+        <div><p class="k">Electric / month</p><p class="n g" id="evAmt">₹0</p></div>
+      </div>
+      <p class="note">Indicative estimate. Assumes 30 riding days a month and about 3.5 units of electricity per 100 km. Actual savings vary with model, riding style and tariff.</p>
+    </div>
+  </div>
+</section>
+
+<section id="outlets">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">Our outlets</p>
+        <h2 class="display-l"><span data-t="business.outlets_count">17</span> outlets in <span data-t="business.cities_count">11</span> cities across Punjab.</h2>
+      </div>
+    </div>
+    <div class="ogrid" id="ogrid"></div>
+  </div>
+</section>
+
+<section id="faq" class="mist">
+  <div class="wrap faq">
+    <div>
+      <p class="eyebrow">FAQ</p>
+      <h2 class="display-l">Questions we hear every day.</h2>
+    </div>
+    <div class="qa" id="qa"></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2 class="display-l">Your next ride starts with a conversation.</h2>
+      <p class="lead">Book a test ride, schedule a service, or ask about prices, offers and EMI. Choose your nearest outlet and our team will get back to you.</p>
+      <dl class="cinfo">
+        <div><dt>Flagship showroom</dt><dd id="addr"></dd></div>
+        <div><dt>Phone / WhatsApp</dt><dd id="tel"></dd></div>
+        <div><dt>Outlet numbers</dt><dd id="onums"></dd></div>
+        <div><dt>Showroom hours</dt><dd data-t="business.hours">10:00 AM – 7:00 PM</dd></div>
+      </dl>
+    </div>
+    <form id="form" name="contact-enquiry" novalidate>
+      <input type="hidden" name="form-name" value="contact-enquiry"><p hidden><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <div class="f"><label for="name">Your name</label><input id="name" name="name" autocomplete="name"><div class="err" id="nameErr"></div></div>
+      <div class="f"><label for="phone">Mobile number</label><input id="phone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel" placeholder="10-digit mobile"><div class="err" id="phoneErr"></div></div>
+      <div class="f"><label for="outlet">Nearest outlet</label><select id="outlet" name="outlet"></select></div>
+      <div class="f"><label for="interest">I'm interested in</label><select id="interest" name="interest"><option>Book a test ride</option><option>Price &amp; offers</option><option>Finance / EMI</option><option>Exchange my two-wheeler</option><option>Book a service</option></select></div>
+      <div class="f"><label for="model">Model</label><select id="model" name="model"></select></div>
+      <div class="f"><label for="date">Preferred date</label><input id="date" name="date" type="date"></div>
+      <div class="f full"><label for="msg">Message (optional)</label><textarea id="msg" name="message" rows="3" maxlength="1000" placeholder="Colour preference, exchange vehicle, best time to call…"></textarea></div>
+      <div class="full fs"><button class="btn btn-ola" type="submit" id="cSend">Send enquiry</button><p>Our team will call you back. We never share your details.</p></div>
+      <div class="ok" id="ok" hidden></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href="#top"><span class="n">NOVELTY</span><span class="o">OLA</span></a>
+        <p style="margin-top:14px;max-width:34ch">Authorised Ola Electric dealer. A Novelty Group dealership. www.noveltyola.com</p>
+      </div>
+      <div class="fcols">
+        <div><h4>Explore</h4><ul><li><a href="#models">Models</a></li><li><a href="#services">Services</a></li><li><a href="#savings">Savings</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+        <div><h4>Outlets</h4><ul id="fout"></ul></div>
+        <div><h4>Contact</h4><ul><li id="ftel"></li><li data-t="business.hours">10 AM – 7 PM</li><li><a href="#contact">Send an enquiry</a></li></ul></div>
+      </div>
+    </div>
+    <p class="legal">© <span id="yr"></span> Novelty Ola. Ola, Ola Electric and model names are trademarks of their respective owner. Specifications, prices and offers are subject to change. Please confirm at your outlet.</p>
+  </div>
+</footer>
+
+<button class="help" id="helpBtn" type="button" aria-haspopup="dialog" aria-controls="enq">
+  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 11h.01M12 11h.01M15.5 11h.01"/></svg></span>
+  <span class="tx">May I help you?</span>
+</button>
+
+<div class="modal" id="enq" role="dialog" aria-modal="true" aria-labelledby="enqTitle" hidden>
+  <div class="mbox">
+    <button class="x" type="button" id="enqClose" aria-label="Close">×</button>
+    <div id="enqBody">
+      <p class="eyebrow">Novelty Ola</p>
+      <h2 id="enqTitle">New Year offers on your new Ola</h2>
+      <p class="sub" id="enqSub">Share your details and our team will call you with the best price, EMI and exchange offer.</p>
+      <form id="enqForm" name="popup-enquiry" novalidate>
+        <input type="hidden" name="form-name" value="popup-enquiry"><p hidden><label>Leave this empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+        <input id="eName" name="name" autocomplete="name" placeholder="Name" aria-label="Name">
+        <div class="ph"><span><i></i>+91</span><input id="ePhone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel-national" placeholder="Phone Number" aria-label="Phone number"></div>
+        <input id="ePin" name="pincode" inputmode="numeric" maxlength="6" autocomplete="postal-code" placeholder="Pincode" aria-label="Pincode">
+        <select id="eModel" name="product" aria-label="Product interested in"></select>
+        <select id="eOutlet" name="outlet" aria-label="Nearest outlet"></select>
+        <p class="merr" id="eErr" role="alert"></p>
+        <button class="btn btn-ola go" type="submit">I am Interested</button>
+        <p class="terms">By submitting, you agree to be contacted by Novelty Ola on call and WhatsApp.</p>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/defaults.js"></script>
+<script src="/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Novelty Ola Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+
+<!-- Sign in -->
+<section class="auth" id="authView" hidden>
+  <div class="auth-card">
+    <p class="brand"><span>NOVELTY</span> <b>OLA</b> <small>Admin</small></p>
+    <form id="loginForm" novalidate>
+      <h1>Sign in</h1>
+      <p class="muted">Use the email and password set up for you in Supabase.</p>
+      <label for="loginEmail">Email</label>
+      <input id="loginEmail" type="email" autocomplete="username" required>
+      <label for="loginPass">Password</label>
+      <input id="loginPass" type="password" autocomplete="current-password" required>
+      <p class="form-err" id="loginErr" role="alert"></p>
+      <button class="btn primary wide" type="submit" id="loginBtn">Sign in</button>
+      <button class="link" type="button" id="forgotBtn">Forgot password?</button>
+    </form>
+    <form id="resetForm" novalidate hidden>
+      <h1>Set a new password</h1>
+      <p class="muted">Choose a password with at least 8 characters.</p>
+      <label for="newPass">New password</label>
+      <input id="newPass" type="password" autocomplete="new-password" minlength="8" required>
+      <p class="form-err" id="resetErr" role="alert"></p>
+      <button class="btn primary wide" type="submit">Save password</button>
+    </form>
+    <p class="setup-note" id="setupNote" hidden>The admin panel isn't connected yet. Add your Supabase Project URL and anon key to <code>js/config.js</code>, then reload this page.</p>
+  </div>
+</section>
+
+<!-- App -->
+<div class="app" id="appView" hidden>
+  <aside class="side" id="side">
+    <p class="brand"><span>NOVELTY</span> <b>OLA</b> <small>Admin</small></p>
+    <nav id="nav" aria-label="Admin sections">
+      <a href="#dashboard" data-v="dashboard">Dashboard</a>
+      <a href="#enquiries" data-v="enquiries">Enquiries <span class="pill" id="newCount" hidden></span></a>
+      <p class="nav-h">Website content</p>
+      <a href="#cover" data-v="cover">Cover &amp; offers</a>
+      <a href="#models" data-v="models">Models &amp; prices</a>
+      <a href="#outlets" data-v="outlets">Outlets</a>
+      <a href="#services" data-v="services">Services</a>
+      <a href="#faqs" data-v="faqs">FAQs</a>
+      <a href="#business" data-v="business">Business details</a>
+      <p class="nav-h">Setup</p>
+      <a href="#settings" data-v="settings">Site settings</a>
+      <a href="#admins" data-v="admins">Admin users</a>
+    </nav>
+    <div class="side-foot">
+      <a class="btn ghost wide" href="/" target="_blank" rel="noopener">View website ↗</a>
+      <p class="who" id="who"></p>
+      <button class="link" type="button" id="logoutBtn">Sign out</button>
+    </div>
+  </aside>
+  <div class="main">
+    <header class="topbar">
+      <button class="menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="side"><span></span><span></span><span></span></button>
+      <h1 id="viewTitle">Dashboard</h1>
+      <div class="top-actions" id="topActions"></div>
+    </header>
+    <main id="view" tabindex="-1"></main>
+  </div>
+</div>
+
+<!-- Editor drawer -->
+<div class="drawer-bg" id="drawerBg" hidden></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle" hidden>
+  <header><h2 id="drawerTitle">Edit</h2><button class="x" type="button" id="drawerClose" aria-label="Close">×</button></header>
+  <form id="drawerForm" novalidate></form>
+</aside>
+
+<!-- Confirm dialog -->
+<div class="confirm-bg" id="confirmBg" hidden>
+  <div class="confirm" role="alertdialog" aria-modal="true" aria-labelledby="confirmText">
+    <p id="confirmText">Are you sure?</p>
+    <div class="row-end"><button class="btn ghost" type="button" id="confirmNo">Cancel</button><button class="btn danger" type="button" id="confirmYes">Delete</button></div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+<script src="/js/config.js"></script>
+<script src="/js/defaults.js"></script>
+<script src="/admin/admin.js"></script>
+</body>
+</html>
