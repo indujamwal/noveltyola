@@ -28,9 +28,9 @@ window.NOVELTY_DEFAULTS = {
       popup_delay_seconds: 2.5
     },
     business: {
-      phone_display: "+91 70873 00431",
-      phone: "917087300431",
-      whatsapp: "917087300431",
+      phone_display: "+91 7665004458",
+      phone: "917665004458",
+      whatsapp: "919876504546",
       address: "Batala Road, Opposite Bank of India, Vijay Nagar, Opposite Pillar No. 20, Amritsar, Punjab 143001",
       hours: "10:00 AM – 7:00 PM",
       outlet_numbers: "Jalandhar: 76650 04436\nAll other outlets: 76650 04458",
